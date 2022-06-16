@@ -1,114 +1,83 @@
-{
- "cells": [
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "# Microsoft Movie Studio??\n",
-    "\n",
-    "![microsoft logo](images/microsoftlogo.png)\n",
-    "\n",
-    "## Overview\n",
-    "Flatiron School Data Science Phase 1 project.\n",
-    "\n",
-    "## Business Problem\n",
-    "Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.\n",
-    "\n",
-    "## Data Used\n",
-    "data from the following sources can be found in the 'zippedData' folder\n",
-    "\n",
-    "    * [IMDB](https://www.imdb.com/) - im.db.zip\n",
-    "    * [Box Office Mojo](https://www.boxofficemojo.com/) - bom.movie_gross.csv.gz\n",
-    "    * [The Numbers](https://www.the-numbers.com/) - tn.movie_budgets.csv.gz\n",
-    "\n",
-    "## Movie Data ERD\n",
-    "![Movie Data ERD](images/movie_data_erd.jpeg)\"\n",
-    "\n",
-    "## Deliverables\n",
-    "* [Non-Technical Presentation]()\n",
-    "* [GitHub Repository](https://github.com/ceflynn/dsc-phase-1-project-v2-4)\n",
-    "* [Jupyter Notebook](https://github.com/ceflynn/dsc-phase-1-project-v2-4/blob/master/student.ipynb)\n",
-    "\n",
-    "## Action Steps\n",
-    "* **Recommendation 1** - Compete with Big Studios\n",
-    "    * Create dataframe from BoxOfficeMovie.com\n",
-    "    * Data Cleaning\n",
-    "           * Missing values and NaN\n",
-    "           * Commas in 'foreign_gross' - Get Values from website\n",
-    "           * Change columns in int64 for calculations\n",
-    "     * Find and graph total gross\n",
-    "    * Create dataframe from the-numbers.com\n",
-    "    * Data cleaning\n",
-    "           * Get rid of '$' and ',' from 'production_budget' and 'worldwide_gross\n",
-    "           * Change those columns to int64\n",
-    "           * Create column and calculate profit\n",
-    "           * Drop unecessary columns\n",
-    "           * Change 'release_date' to 'year' and only have the 4 digit year\n",
-    "    * Merge data with studio data\n",
-    "    * Get full studio names\n",
-    "    * Create data visualization for movie studio Profit\n",
-    "* **Recommendation 2** - Create Multi-Genre Movies \n",
-    "    * unzip db\n",
-    "    * Create dataframe\n",
-    "    * Join tables (movie_basics and movie_ratings)\n",
-    "    * Get popular and highly rated movies\n",
-    "    * Data cleaning\n",
-    "    * Create boolean multi-genre column\n",
-    "    * Data visualization using value_counts()\n",
-    "\n",
-    "* **Recommendation 3** - Focus on Biographies\n",
-    "    * Get list of Genres from the dataframe in Rec 2\n",
-    "    * Create boolean column for each Drama\n",
-    "    * Count values for genre columns\n",
-    "    * Create data visualization for genre_counts\n",
-    "    * Find average rating for each genre for all Movies\n",
-    "    * Data cleaning\n",
-    "    * Use most common genres\n",
-    "    * Get the mean for each genre\n",
-    "    * Create data visualization for genre ratings\n",
-    "\n",
-    "## Repository\n",
-    "* images\n",
-    "    * awesome.gif\n",
-    "    * microsoftlogo.png\n",
-    "    * movie_data_erd.jpeg\n",
-    "* pdf\n",
-    "    * microsoft-pres.pdf\n",
-    "* zippedData\n",
-    "    * bom.movie_gross.csv.gz\n",
-    "    * im.db.zip\n",
-    "    * rt.movie_info.tsv.gz\n",
-    "    * rt.reviews.tsv.gz\n",
-    "    * tmdb.movies.csv.gz\n",
-    "    * tn.movie_budgets.csv.gz\n",
-    "* student.ipynb\n",
-    "* CONTRIBUTING.md\n",
-    "* Instructions.md\n",
-    "* LICENSE.md\n",
-    "* README.md\n",
-    " "
-   ]
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python (learn-env)",
-   "language": "python",
-   "name": "learn-env"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.8.5"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 4
-}
+# Microsoft Movie Studio
+
+![microsoft logo](images/microsoftlogo.png)
+
+## Overview
+Flatiron School Data Science Phase 1 project.
+
+## Business Problem
+Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
+
+## Data Used
+data from the following sources can be found in the 'zippedData' folder
+
+    * [IMDB](https://www.imdb.com/) - im.db.zip
+    * [Box Office Mojo](https://www.boxofficemojo.com/) - bom.movie_gross.csv.gz
+    * [The Numbers](https://www.the-numbers.com/) - tn.movie_budgets.csv.gz
+
+## Movie Data ERD
+![Movie Data ERD](images/movie_data_erd.jpeg)"
+
+## Deliverables
+* [Non-Technical Presentation]()
+* [GitHub Repository](https://github.com/ceflynn/dsc-phase-1-project-v2-4)
+* [Jupyter Notebook](https://github.com/ceflynn/dsc-phase-1-project-v2-4/blob/master/student.ipynb)
+
+## Action Steps
+* **Recommendation 1** - Compete with Big Studios
+    * Create dataframe from BoxOfficeMovie.com
+    * Data Cleaning
+           * Missing values and NaN
+           * Commas in 'foreign_gross' - Get Values from website
+           * Change columns in int64 for calculations
+     * Find and graph total gross
+    * Create dataframe from the-numbers.com
+    * Data cleaning
+           * Get rid of '$' and ',' from 'production_budget' and 'worldwide_gross
+           * Change those columns to int64
+           * Create column and calculate profit
+           * Drop unecessary columns
+           * Change 'release_date' to 'year' and only have the 4 digit year
+    * Merge data with studio data
+    * Get full studio names
+    * Create data visualization for movie studio Profit
+* **Recommendation 2** - Create Multi-Genre Movies 
+    * unzip db
+    * Create dataframe
+    * Join tables (movie_basics and movie_ratings)
+    * Get popular and highly rated movies
+    * Data cleaning
+    * Create boolean multi-genre column
+    * Data visualization using value_counts()
+
+* **Recommendation 3** - Focus on Biographies
+    * Get list of Genres from the dataframe in Rec 2
+    * Create boolean column for each Drama
+    * Count values for genre columns
+    * Create data visualization for genre_counts
+    * Find average rating for each genre for all Movies
+    * Data cleaning
+    * Use most common genres
+    * Get the mean for each genre
+    * Create data visualization for genre ratings
+
+## Repository
+* images
+    * awesome.gif
+    * microsoftlogo.png
+    * movie_data_erd.jpeg
+* pdf
+    * microsoft-pres.pdf
+* zippedData
+    * bom.movie_gross.csv.gz
+    * im.db.zip
+    * rt.movie_info.tsv.gz
+    * rt.reviews.tsv.gz
+    * tmdb.movies.csv.gz
+    * tn.movie_budgets.csv.gz
+* student.ipynb
+* CONTRIBUTING.md
+* Instructions.md
+* LICENSE.md
+* README.md
+ 
