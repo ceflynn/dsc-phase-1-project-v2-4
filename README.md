@@ -24,42 +24,26 @@ data from the following sources can be found in the 'zippedData' folder
 * [Jupyter Notebook](https://github.com/ceflynn/dsc-phase-1-project-v2-4/blob/master/student.ipynb)
 
 ## Action Steps
-* **Recommendation 1** - Compete with Big Studios
-    * Create dataframe from BoxOfficeMovie.com
-    * Data Cleaning
-           * Missing values and NaN
-           * Commas in 'foreign_gross' - Get Values from website
-           * Change columns in int64 for calculations
-     * Find and graph total gross
-    * Create dataframe from the-numbers.com
-    * Data cleaning
-           * Get rid of '$' and ',' from 'production_budget' and 'worldwide_gross
-           * Change those columns to int64
-           * Create column and calculate profit
-           * Drop unecessary columns
-           * Change 'release_date' to 'year' and only have the 4 digit year
-    * Merge data with studio data
-    * Get full studio names
-    * Create data visualization for movie studio Profit
-* **Recommendation 2** - Create Multi-Genre Movies 
-    * unzip db
-    * Create dataframe
-    * Join tables (movie_basics and movie_ratings)
-    * Get popular and highly rated movies
-    * Data cleaning
-    * Create boolean multi-genre column
-    * Data visualization using value_counts()
+**Recommendation 1** - Compete with Big Studios
 
-* **Recommendation 3** - Focus on Biographies
-    * Get list of Genres from the dataframe in Rec 2
-    * Create boolean column for each Drama
-    * Count values for genre columns
-    * Create data visualization for genre_counts
-    * Find average rating for each genre for all Movies
-    * Data cleaning
-    * Use most common genres
-    * Get the mean for each genre
-    * Create data visualization for genre ratings
+Using data from BokOfficeMovie.com and the-numbers.com, I was able to create a data set that produced the the profits for all studios.  The process included data cleaning and calucluating total profit.  Data Visualization provided below.
+
+![Lifetime Studio Profits Chart](images/vis-1.png)
+
+**Recommendation 2** - Create Multi-Genre Movies 
+
+Data from IMDB.com was used to create a dataframe that would be used to comparem multi and single Genre movies.
+The data had to be cleaned to separate and categorize each movie and genre.  Data visualization can be found below.
+  
+![Multi-Genre Movie Chart](images/vis-2.png)
+
+**Recommendation 3** - Focus on Biographies
+
+The same data was used from Recommendation 2 to get the average rating for each genre.  Please, see the data visualization below for details.
+
+![Average Rating By Genre Chart](images/vis-3.png)
+
+
 
 ## Repository
 * images
